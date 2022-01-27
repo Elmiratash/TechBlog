@@ -1,0 +1,18 @@
+<div class="text-center">
+  <h2>Name</h2>
+  <input value="{{name}}" id="updatename">
+  <h2>Description</h2>
+  <input value="{{description}}" id="updatedescription">
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <p>
+    <button class="btn btn-primary" id="editbtn">Edit this Post!</button>
+  </p>
+  <input  id="addcomment">
+  <button id ="btncomment">Comment</button>
+  {{#each comments}}
+  <p>{{comment_text}}</p>
+  <p>Created by {{user.name}}</p>
+  {{/each}}
+
+</div>
+<script src="/js/edit.js"></script>
