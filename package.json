@@ -10,8 +10,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node server.js",
-        "seed": "node seeds/seed.js",
-        "debug": "node --inspect server.js"
+        "seed": "node seeds/seed.js"
     },
     "keywords": [],
     "author": "",
