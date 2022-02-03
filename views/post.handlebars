@@ -1,18 +1,13 @@
 <div class="text-center">
-  <h2>Name</h2>
-  <input value="{{name}}" id="updatename">
-  <h2>Description</h2>
-  <input value="{{description}}" id="updatedescription">
+  <h3>Name</h3>
+  <input id= "name" value = "{{name}}">
+  <h3>Description</h3>
+ <input id= "description" value = "{{description}}">
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
   <p>
-    <button class="btn btn-primary" id="editbtn">Edit this Post!</button>
+    <button class="btn btn-primary" id="edit-btn">Edit Post</button>
   </p>
-  <input  id="addcomment">
-  <button id ="btncomment">Comment</button>
-  {{#each comments}}
-  <p>{{comment_text}}</p>
-  <p>Created by {{user.name}}</p>
-  {{/each}}
-
 </div>
-<script src="/js/edit.js"></script>
+
+
+<script src="/js/editPost.js"></script>

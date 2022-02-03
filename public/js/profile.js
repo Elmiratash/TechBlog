@@ -2,6 +2,7 @@ const newFormHandler = async(event) => {
     event.preventDefault();
 
     const name = document.querySelector('#post-name').value.trim();
+
     const description = document.querySelector('#post-desc').value.trim();
 
     if (name && description) {
@@ -42,5 +43,5 @@ document
     .addEventListener('submit', newFormHandler);
 
 document
-    .querySelector('.post-list')
+    .querySelector('#deleteBtn')
     .addEventListener('click', delButtonHandler);
